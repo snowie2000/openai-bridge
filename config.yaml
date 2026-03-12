@@ -1,0 +1,17 @@
+# openai-bridge configuration
+
+# Address to listen on.
+listen_addr: "127.0.0.1:1234"
+
+# Upstream OpenAI-compatible base URL (must end without a trailing slash).
+# The bridge will forward all non-translated requests here.
+upstream_base_url: "http://127.0.0.1:7816"
+
+# Set to true to log raw request and response bodies.
+debug: false
+
+# Translate client model names to upstream model names.
+# model_mapping:
+#   gpt-4o: gemini-2.0-flash
+#   o3-mini: gemini-3-flash-preview
+
